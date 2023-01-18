@@ -1,7 +1,7 @@
 const {ethers} = require('ethers');
 const fs = require('fs');
 
-const { addresses } = require('./addresses');
+const { addresses } = require('./airdrop');
 
 let content = '';
 
@@ -12,4 +12,4 @@ addresses.map((item, index) => {
     }
 })
 
-fs.writeFileSync('./addresscheck.csv', content)
+fs.writeFileSync('./output/addresscheck.csv', content)
