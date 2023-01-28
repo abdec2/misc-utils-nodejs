@@ -9,7 +9,7 @@ if (addresses.length !== Qty.length) {
     return;
 }
 
-const chunksize = 500
+const chunksize = 100
 const chunks = []
 const amountChunk = []
 let temp = []
